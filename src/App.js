@@ -8,8 +8,8 @@ import './App.css';
 
 
 function App() {
-  const record=JSON.parse(localStorage.getItem("record"))
-  console.log(record)
+  const localstringdata=localStorage.getItem("record");
+  const record=localstringdata?(JSON.parse(localstringdata)):[]
   const [recordjson,setrecordjson]=useState(record)
  
   return (
