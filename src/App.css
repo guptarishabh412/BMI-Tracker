@@ -1,0 +1,135 @@
+
+*{
+  /* border:1px solid red; */
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+body{
+  background-color: rgb(28, 46, 86);
+  color:white;
+  font-family:sans-serif;
+  
+}
+.logo{
+  text-align: center;
+}
+.inputelement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.inputContainer{
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.inputContainer p{
+  margin: 0px;
+  font-size: 0.75em;
+  padding-left: 10px;
+}
+.height p{
+ text-align: end;
+ padding-right: 10px;
+}
+.weight,.height{
+  width:50%;
+  padding: 0px 5px;
+}
+#weight,#height{
+  width: 100%;
+  border-radius: 10px;
+}
+.calculatebutton{
+       width: 30%;
+       border-radius: 20px;
+       padding: 5px;
+      background-color: #b00;
+      border: none;
+      color: white;
+
+}
+.pastrecordcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgba(200, 200, 200, 0.3);
+  min-height: 20vh;
+  max-height: 40vh;
+  overflow-y: auto;
+  margin: 20px;
+}
+.pastrecordcontainer::-webkit-scrollbar{
+ width:8px;
+ background-image: linear-gradient(rgba(0,0,0,0),rgba(200,0,200,0.75));;
+}
+
+.record{
+  border: 2px solid rgba(200, 200, 200, 0.4);
+  margin: 10px;
+  width: calc(90% - 20px);
+  padding: 10px 20px;
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(200,0,200,0.3));
+  position: relative;
+  box-shadow: inset -5px 5px 5px rgba(0,0,0,0.3);
+}
+.delete{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10% 10% 10% 50%;
+  border: 2px solid;
+  box-shadow: -5px 5px 5px rgba(0,0,0,0.3);
+}
+.record div p{
+  margin: 3px;
+  font-size: 0.8em;
+}
+.empty{
+  font-size: 5em;
+  margin: auto;
+  opacity: 0.5;
+}
+.recharts-wrapper{
+  margin: auto;
+  
+}
+.otherdetail{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+@media (width>735px){
+ .record{
+    width: calc(50% - 20px);
+ }
+ .calculatebutton{
+  width: 20%;
+  height: 22px;
+  margin-top: 12px;
+  background-color: #b00;
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 0px;
+ }
+ .height,.weight{
+  width: 50%;
+ }
+ .inputelement{
+  flex-direction: row;
+  
+ }
+ .inputContainer{
+  padding-right: 5px;
+ }
+}
+
