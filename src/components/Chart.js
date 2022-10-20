@@ -11,7 +11,7 @@ const Chart=()=>{
     return(
     // console.log()
      
-        <AreaChart width={window.innerWidth/1.25} height={300} data={recordjson}
+        <AreaChart width={window.innerWidth} height={300} data={recordjson}
   margin={{ top: 10, right: 50, left: 10, bottom: 0 }}>
   <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
