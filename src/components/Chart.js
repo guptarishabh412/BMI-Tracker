@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AppContext from "../context/AppContext";
 //---------------------------------
 import { AreaChart,Area,XAxis,YAxis,CartesianGrid,Tooltip} from "recharts";
@@ -6,10 +6,12 @@ import { AreaChart,Area,XAxis,YAxis,CartesianGrid,Tooltip} from "recharts";
 
 const Chart=()=>{
     const {recordjson,setrecordjson}=useContext(AppContext);
-    
+    // const {w,setw}=useState(window.innerWidth)
+    // console.log(w)
     return(
+    // console.log()
      
-        <AreaChart width={730} height={250} data={recordjson}
+        <AreaChart width={window.innerWidth/1.25} height={300} data={recordjson}
   margin={{ top: 10, right: 50, left: 10, bottom: 0 }}>
   <defs>
     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

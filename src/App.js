@@ -21,6 +21,7 @@ function App() {
      }}>
             <Input/>
             <Chart/>
+            <h2 style={{textAlign:"center"}}>7 Day Data</h2>
             <PastRecords/>
 
          </AppContext.Provider>

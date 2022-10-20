@@ -14,6 +14,8 @@ const Input=()=>{
         }
     }
     const handleclick=()=>{
+    console.log(window.innerWidth)
+
         if(recordjson.length<7 && height && weight){
         setheight("")
         setweight("")

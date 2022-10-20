@@ -29,7 +29,7 @@ const PastRecords=()=>{
                                 <p>Date: {i.date}</p>
                               </div>
                          </div>
-                )})):<div class="empty">Add record <span style={{color:"red"}}>!</span></div>
+                )})):<div className="empty">Add record <span style={{color:"red"}}>!</span></div>
         }
         </div>
     )
